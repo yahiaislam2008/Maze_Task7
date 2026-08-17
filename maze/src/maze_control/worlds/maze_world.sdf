@@ -1,0 +1,509 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="maze_world">
+
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact"/>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.3 0.3 0.3 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.2 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>20 20</size></plane></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>20 20</size></plane></geometry>
+          <material>
+            <ambient>0.7 0.7 0.7 1</ambient>
+            <diffuse>0.7 0.7 0.7 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+
+    <model name="wall_south"><static>true</static>
+      <pose>2.5 0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>5.0 0.05 0.5</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5.0 0.05 0.5</size></box></geometry>
+          <material><ambient>0.5 0.5 0.55 1</ambient><diffuse>0.5 0.5 0.55 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_north"><static>true</static>
+      <pose>2.5 3 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>5.0 0.05 0.5</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>5.0 0.05 0.5</size></box></geometry>
+          <material><ambient>0.5 0.5 0.55 1</ambient><diffuse>0.5 0.5 0.55 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall_west"><static>true</static>
+      <pose>0 1.5 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.05 3.0 0.5</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>0.05 3.0 0.5</size></box></geometry>
+          <material><ambient>0.5 0.5 0.55 1</ambient><diffuse>0.5 0.5 0.55 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- East wall only spans y:0-2; y:2-3 is the exit doorway (gate_3) -->
+    <model name="wall_east_lower"><static>true</static>
+      <pose>5 1.0 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>0.05 2.0 0.5</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>0.05 2.0 0.5</size></box></geometry>
+          <material><ambient>0.5 0.5 0.55 1</ambient><diffuse>0.5 0.5 0.55 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Partition between corridor 1 and 2, spans x:0-4; x:4-5 gap = gate_1 -->
+    <model name="partition_1"><static>true</static>
+      <pose>2.5 1 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>3.0 0.05 0.5</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>3.0 0.05 0.5</size></box></geometry>
+          <material><ambient>0.5 0.5 0.55 1</ambient><diffuse>0.5 0.5 0.55 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Partition between corridor 2 and 3, spans x:1-5; x:0-1 gap = gate_2 -->
+    <model name="partition_2"><static>true</static>
+      <pose>3.0 2 0.25 0 0 0</pose>
+      <link name="link">
+        <collision name="collision"><geometry><box><size>4.0 0.05 0.5</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>4.0 0.05 0.5</size></box></geometry>
+          <material><ambient>0.5 0.5 0.55 1</ambient><diffuse>0.5 0.5 0.55 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+
+
+    <model name="retractable_wall_1">
+      <pose>0.5 1 0.25 0 0 0</pose>
+      <link name="wall_link">
+        <inertial>
+          <mass>5.0</mass>
+          <inertia><ixx>0.105</ixx><iyy>0.521</iyy><izz>0.418</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <collision name="collision"><geometry><box><size>0.8 0.05 0.5</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>0.8 0.05 0.5</size></box></geometry>
+          <material><ambient>0.75 0.1 0.1 1</ambient><diffuse>0.75 0.1 0.1 1</diffuse></material>
+        </visual>
+      </link>
+      <joint name="wall_1_joint" type="prismatic">
+        <parent>world</parent>
+        <child>wall_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit><lower>0.0</lower><upper>1.0</upper><effort>200</effort><velocity>0.5</velocity></limit>
+          <dynamics><damping>5.0</damping></dynamics>
+        </axis>
+      </joint>
+      <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+        <joint_name>wall_1_joint</joint_name>
+        <topic>/model/retractable_wall_1/joint/wall_1_joint/cmd_pos</topic>
+        <initial_position>0.0</initial_position>
+        <p_gain>60</p_gain>
+        <i_gain>0.05</i_gain>
+        <d_gain>5</d_gain>
+        <i_max>10</i_max>
+        <i_min>-10</i_min>
+        <cmd_max>200</cmd_max>
+        <cmd_min>-200</cmd_min>
+      </plugin>
+    </model>
+
+    <model name="retractable_wall_2">
+      <pose>0.5 2 0 0 0 0</pose>
+      <link name="wall_link">
+        <inertial>
+          <mass>5.0</mass>
+          <inertia><ixx>0.105</ixx><iyy>0.521</iyy><izz>0.418</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia>
+        </inertial>
+        <collision name="collision"><geometry><box><size>0.7 0.05 0.5</size></box></geometry></collision>
+        <visual name="visual"><geometry><box><size>0.7 0.05 0.5</size></box></geometry>
+          <material><ambient>0.75 0.1 0.1 1</ambient><diffuse>0.75 0.1 0.1 1</diffuse></material>
+        </visual>
+      </link>
+      <joint name="wall_2_joint" type="prismatic">
+        <parent>world</parent>
+        <child>wall_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit><lower>0.0</lower><upper>1.0</upper><effort>200</effort><velocity>0.5</velocity></limit>
+          <dynamics><damping>5.0</damping></dynamics>
+        </axis>
+      </joint>
+      <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+        <joint_name>wall_2_joint</joint_name>
+        <topic>/model/retractable_wall_2/joint/wall_2_joint/cmd_pos</topic>
+        <initial_position>5</initial_position>
+        <p_gain>60</p_gain>
+        <i_gain>0.05</i_gain>
+        <d_gain>5</d_gain>
+        <i_max>10</i_max>
+        <i_min>-10</i_min>
+        <cmd_max>200</cmd_max>
+        <cmd_min>-200</cmd_min>
+      </plugin>
+    </model>
+
+    <!-- gate_3 blocks the exit doorway itself; oriented along Y -->
+    <!-- <model name="retractable_wall_3"> -->
+      <!-- <pose>5 2.5 0.25 0 0 0</pose> -->
+      <!-- <link name="wall_link"> -->
+        <!-- <inertial> -->
+          <!-- <mass>5.0</mass> -->
+          <!-- <inertia><ixx>0.521</ixx><iyy>0.105</iyy><izz>0.418</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia> -->
+        <!-- </inertial> -->
+        <!-- <collision name="collision"><geometry><box><size>0.05 1.0 0.5</size></box></geometry></collision> -->
+        <!-- <visual name="visual"><geometry><box><size>0.05 1.0 0.5</size></box></geometry> -->
+          <!-- <material><ambient>0.1 0.6 0.2 1</ambient><diffuse>0.1 0.6 0.2 1</diffuse></material> -->
+        <!-- </visual> -->
+      <!-- </link> -->
+      <!-- <joint name="wall_3_joint" type="prismatic"> -->
+        <!-- <parent>world</parent> -->
+        <!-- <child>wall_link</child> -->
+        <!-- <axis> -->
+          <!-- <xyz>0 0 1</xyz> -->
+          <!-- <limit><lower>0.0</lower><upper>0.6</upper><effort>200</effort><velocity>0.5</velocity></limit> -->
+          <!-- <dynamics><damping>5.0</damping></dynamics> -->
+        <!-- </axis> -->
+      <!-- </joint> -->
+      <!-- <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController"> -->
+        <!-- <joint_name>wall_3_joint</joint_name> -->
+        <!-- <topic>/model/retractable_wall_3/joint/wall_3_joint/cmd_pos</topic> -->
+        <!-- <initial_position>0.0</initial_position> -->
+        <!-- <p_gain>60</p_gain> -->
+        <!-- <i_gain>0.05</i_gain> -->
+        <!-- <d_gain>5</d_gain> -->
+        <!-- <i_max>10</i_max> -->
+        <!-- <i_min>-10</i_min> -->
+        <!-- <cmd_max>200</cmd_max> -->
+        <!-- <cmd_min>-200</cmd_min> -->
+          <!-- </plugin> -->
+        <!-- </model> -->
+     <!-- ==========================================
+         90-DEGREE ROTATED CHECKERED FINISH LINE
+         Center: (5.0, 2.5)
+         4 columns X 8 rows
+         Square size: 0.15 m
+         ========================================== -->
+        <!-- Column 1 -->
+    <model name="finish_1_1"><static>true</static>
+      <pose>4.775 2.475 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="finish_1_2"><static>true</static>
+      <pose>4.925 2.475 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="finish_1_3"><static>true</static>
+      <pose>5.075 2.475 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="finish_1_4"><static>true</static>
+      <pose>5.225 2.475 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual></link>
+    </model>
+
+
+    <!-- Column 2 -->
+    <model name="finish_2_1"><static>true</static>
+      <pose>4.775 2.625 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="finish_2_2"><static>true</static>
+      <pose>4.925 2.625 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="finish_2_3"><static>true</static>
+      <pose>5.075 2.625 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="finish_2_4"><static>true</static>
+      <pose>5.225 2.625 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+      </visual></link>
+    </model>
+
+
+    <!-- Column 3 -->
+    <model name="finish_3_1"><static>true</static>
+      <pose>4.775 2.775 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="finish_3_2"><static>true</static>
+      <pose>4.925 2.775 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="finish_3_3"><static>true</static>
+      <pose>5.075 2.775 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="finish_3_4"><static>true</static>
+      <pose>5.225 2.775 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual></link>
+    </model>
+
+
+    <!-- Column 4 -->
+    <model name="finish_4_1"><static>true</static>
+      <pose>4.775 2.925 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="finish_4_2"><static>true</static>
+      <pose>4.925 2.925 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="finish_4_3"><static>true</static>
+      <pose>5.075 2.925 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual></link>
+    </model>
+
+    <model name="finish_4_4"><static>true</static>
+      <pose>5.225 2.925 0.006 0 0 0</pose>
+      <link name="link"><visual name="visual">
+        <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+        <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+      </visual></link>
+    </model>
+    <!-- Column 5 -->
+<model name="finish_5_1"><static>true</static>
+  <pose>4.775 2.325 0.006 0 0 0</pose>
+  <link name="link"><visual name="visual">
+    <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+    <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+  </visual></link>
+</model>
+
+<model name="finish_5_2"><static>true</static>
+  <pose>4.925 2.325 0.006 0 0 0</pose>
+  <link name="link"><visual name="visual">
+    <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+    <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+  </visual></link>
+</model>
+
+<model name="finish_5_3"><static>true</static>
+  <pose>5.075 2.325 0.006 0 0 0</pose>
+  <link name="link"><visual name="visual">
+    <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+    <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+  </visual></link>
+</model>
+
+<model name="finish_5_4"><static>true</static>
+  <pose>5.225 2.325 0.006 0 0 0</pose>
+  <link name="link"><visual name="visual">
+    <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+    <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+  </visual></link>
+</model>
+
+
+<!-- Column 6 -->
+<model name="finish_6_1"><static>true</static>
+  <pose>4.775 2.175 0.006 0 0 0</pose>
+  <link name="link"><visual name="visual">
+    <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+    <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+  </visual></link>
+</model>
+
+<model name="finish_6_2"><static>true</static>
+  <pose>4.925 2.175 0.006 0 0 0</pose>
+  <link name="link"><visual name="visual">
+    <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+    <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+  </visual></link>
+</model>
+
+<model name="finish_6_3"><static>true</static>
+  <pose>5.075 2.175 0.006 0 0 0</pose>
+  <link name="link"><visual name="visual">
+    <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+    <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+  </visual></link>
+</model>
+
+<model name="finish_6_4"><static>true</static>
+  <pose>5.225 2.175 0.006 0 0 0</pose>
+  <link name="link"><visual name="visual">
+    <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+    <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+  </visual></link>
+</model>
+
+
+<!-- Column 7 -->
+<model name="finish_7_1"><static>true</static>
+  <pose>4.775 2.025 0.006 0 0 0</pose>
+  <link name="link"><visual name="visual">
+    <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+    <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+  </visual></link>
+</model>
+
+<model name="finish_7_2"><static>true</static>
+  <pose>4.925 2.025 0.006 0 0 0</pose>
+  <link name="link"><visual name="visual">
+    <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+    <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+  </visual></link>
+</model>
+
+<model name="finish_7_3"><static>true</static>
+  <pose>5.075 2.025 0.006 0 0 0</pose>
+  <link name="link"><visual name="visual">
+    <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+    <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+  </visual></link>
+</model>
+
+<model name="finish_7_4"><static>true</static>
+  <pose>5.225 2.025 0.006 0 0 0</pose>
+  <link name="link"><visual name="visual">
+    <geometry><box><size>0.15 0.15 0.01</size></box></geometry>
+    <material><ambient>0 0 0 1</ambient><diffuse>0 0 0 1</diffuse></material>
+  </visual></link>
+</model>
+
+    <!-- Invisible physical trigger, same footprint as the checkered finish
+         line above (x:[4.7,5.3], y:[1.95,3.0]), 2cm thick so the robot just
+         rolls over it. TouchPlugin needs the Contact system at <world>
+         level (already present near the top of this file). <target> is a
+         hardcoded model name - two instances here so it works with either
+         'robot' or 'burger'. If you ever spawn a robot under a different
+         -name, add a matching <plugin> block with that name as <target>. -->
+        <model name="finish_trigger">
+          <static>false</static>
+        
+          <pose>5.0 2.475 0.01 0 0 0</pose>
+        
+          <link name="link">
+            <gravity>false</gravity>
+        
+            <collision name="collision">
+              <geometry>
+                <box>
+                  <size>0.6 1.05 0.002</size>
+                </box>
+              </geometry>
+            </collision>
+        
+            <sensor name="sensor_contact" type="contact">
+              <contact>
+                <collision>collision</collision>
+              </contact>
+            </sensor>
+          </link>
+        
+          <plugin
+              filename="gz-sim-touchplugin-system"
+              name="gz::sim::systems::TouchPlugin">
+            <target>robot</target>
+            <namespace>finish_robot</namespace>
+            <time>0.05</time>
+            <enabled>true</enabled>
+          </plugin>
+        
+          <plugin
+              filename="gz-sim-touchplugin-system"
+              name="gz::sim::systems::TouchPlugin">
+            <target>burger</target>
+            <namespace>finish_burger</namespace>
+            <time>0.05</time>
+            <enabled>true</enabled>
+          </plugin>
+        </model>
+  </world>
+</sdf>
