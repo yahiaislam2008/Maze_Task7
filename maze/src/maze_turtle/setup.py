@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'wall_client = maze_turtle.wall_client:main'
         ],
     },
 )
