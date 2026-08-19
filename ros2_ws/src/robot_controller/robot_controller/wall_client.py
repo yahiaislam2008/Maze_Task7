@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import rclpy
 from rclpy.node import Node
 from std_srvs.srv import SetBool
@@ -8,7 +10,7 @@ class WallClient(Node):
     def __init__(self):
         super().__init__('wall_client')
         
-        self.declare_parameter('toggle_period', 15.0)
+        self.declare_parameter('toggle_period', 10.0)
         period = self.get_parameter('toggle_period').value
 
         self.client = self.create_client(

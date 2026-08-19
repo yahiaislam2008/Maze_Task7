@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'maze_turtle'
+package_name = 'robot_controller'
 
 setup(
     name=package_name,
@@ -13,8 +13,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='yahia',
-    maintainer_email='yi820690@gmail.com',
+    maintainer='ruee',
+    maintainer_email='ruee@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
     extras_require={
@@ -24,7 +24,10 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'wall_client = maze_turtle.wall_client:main'
+
+        'movement_node = robot_controller.movement_node:main',
+        'wall_client = robot_controller.wall_client:main',
+
         ],
     },
 )
