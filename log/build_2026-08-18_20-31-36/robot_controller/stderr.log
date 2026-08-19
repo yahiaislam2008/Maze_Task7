@@ -1,0 +1,22 @@
+[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:106 (add_custom_target):
+  add_custom_target cannot create target
+  "ament_cmake_python_symlink_robot_controller" because another target with
+  the same name already exists.  The existing target is a custom target
+  created in source directory "/home/ruee/ros2_ws/src/robot_controller".  See
+  documentation for policy CMP0002 for more details.
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+  CMakeLists.txt:15 (ament_python_install_package)
+
+[0m
+[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:144 (add_custom_target):
+  add_custom_target cannot create target
+  "ament_cmake_python_build_robot_controller_egg" because another target with
+  the same name already exists.  The existing target is a custom target
+  created in source directory "/home/ruee/ros2_ws/src/robot_controller".  See
+  documentation for policy CMP0002 for more details.
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+  CMakeLists.txt:15 (ament_python_install_package)
+
+[0m

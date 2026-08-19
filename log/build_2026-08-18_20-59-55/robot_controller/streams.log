@@ -1,0 +1,171 @@
+[0.048s] Invoking command in '/home/ruee/ros2_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ruee/ros2_ws/build/robot_controller -- -j7 -l7
+[0.162s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.498s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.590s] -- Found rclpy: 7.1.11 (/opt/ros/jazzy/share/rclpy/cmake)
+[0.592s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.617s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.816s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.960s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.979s] -- Found action_msgs: 2.0.4 (/opt/ros/jazzy/share/action_msgs/cmake)
+[2.028s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.318s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.644s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.649s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[3.406s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[3.586s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[3.682s] -- Configuring done (3.6s)
+[3.883s] -- Generating done (0.2s)
+[3.928s] -- Build files have been written to: /home/ruee/ros2_ws/build/robot_controller
+[4.036s] [  2%] Built target robot_controller__rs
+[4.039s] [  4%] Built target robot_controller__rosidl_generator_type_description
+[4.053s] [  4%] Built target ament_cmake_python_symlink_robot_controller
+[4.115s] [  6%] Built target robot_controller__cpp
+[4.123s] [ 24%] Built target robot_controller__rosidl_generator_c
+[4.192s] [ 33%] Built target robot_controller__rosidl_typesupport_c
+[4.211s] [ 42%] Built target robot_controller__rosidl_typesupport_introspection_c
+[4.225s] [ 51%] Built target robot_controller__rosidl_typesupport_introspection_cpp
+[4.236s] [ 60%] Built target robot_controller__rosidl_typesupport_fastrtps_c
+[4.240s] [ 68%] Built target robot_controller__rosidl_typesupport_fastrtps_cpp
+[4.255s] [ 77%] Built target robot_controller__rosidl_typesupport_cpp
+[4.306s] [ 77%] Built target robot_controller
+[4.356s] [ 80%] Built target robot_controller__py
+[4.436s] [ 86%] Built target robot_controller__rosidl_generator_py
+[4.489s] [ 91%] Built target robot_controller_s__rosidl_typesupport_c
+[4.489s] [ 95%] Built target robot_controller_s__rosidl_typesupport_introspection_c
+[4.506s] [100%] Built target robot_controller_s__rosidl_typesupport_fastrtps_c
+[4.723s] running egg_info
+[4.793s] writing robot_controller.egg-info/PKG-INFO
+[4.793s] writing dependency_links to robot_controller.egg-info/dependency_links.txt
+[4.794s] writing top-level names to robot_controller.egg-info/top_level.txt
+[4.962s] reading manifest file 'robot_controller.egg-info/SOURCES.txt'
+[4.964s] writing manifest file 'robot_controller.egg-info/SOURCES.txt'
+[5.046s] [100%] Built target ament_cmake_python_build_robot_controller_egg
+[5.066s] Invoked command in '/home/ruee/ros2_ws/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ruee/ros2_ws/build/robot_controller -- -j7 -l7
+[5.083s] Invoking command in '/home/ruee/ros2_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ruee/ros2_ws/build/robot_controller
+[5.095s] -- Install configuration: ""
+[5.097s] -- Execute custom install script
+[5.097s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/ament_index/resource_index/rosidl_interfaces/robot_controller
+[5.097s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/action/MoveX.json
+[5.098s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/action/Yaw.json
+[5.099s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__functions.h
+[5.100s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__struct.h
+[5.100s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__type_support.h
+[5.101s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__functions.h
+[5.101s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__struct.h
+[5.102s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__type_support.h
+[5.102s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/move_x.h
+[5.103s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/yaw.h
+[5.103s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/msg/rosidl_generator_c__visibility_control.h
+[5.103s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/library_path.sh
+[5.104s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/library_path.dsv
+[5.104s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__rosidl_typesupport_fastrtps_c.h
+[5.104s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__rosidl_typesupport_fastrtps_c.h
+[5.105s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.105s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__rosidl_typesupport_introspection_c.h
+[5.105s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__rosidl_typesupport_introspection_c.h
+[5.106s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.106s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__builder.hpp
+[5.106s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__struct.hpp
+[5.107s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__traits.hpp
+[5.107s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__type_support.hpp
+[5.107s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__builder.hpp
+[5.108s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__struct.hpp
+[5.108s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__traits.hpp
+[5.109s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__type_support.hpp
+[5.109s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/move_x.hpp
+[5.109s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/yaw.hpp
+[5.110s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.110s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__rosidl_typesupport_fastrtps_cpp.hpp
+[5.111s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__rosidl_typesupport_fastrtps_cpp.hpp
+[5.111s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.112s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__rosidl_typesupport_introspection_cpp.hpp
+[5.112s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__rosidl_typesupport_introspection_cpp.hpp
+[5.112s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/pythonpath.sh
+[5.113s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/pythonpath.dsv
+[5.114s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller-0.0.0-py3.12.egg-info/PKG-INFO
+[5.114s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller-0.0.0-py3.12.egg-info/SOURCES.txt
+[5.114s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller-0.0.0-py3.12.egg-info/dependency_links.txt
+[5.114s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller-0.0.0-py3.12.egg-info/top_level.txt
+[5.115s] -- Symlinking: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/__init__.py
+[5.129s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/_robot_controller_s.ep.rosidl_typesupport_c.c
+[5.130s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/_robot_controller_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.130s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/_robot_controller_s.ep.rosidl_typesupport_introspection_c.c
+[5.130s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/action/__init__.py
+[5.130s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/action/_move_x.py
+[5.131s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/action/_move_x_s.c
+[5.131s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/action/_yaw.py
+[5.131s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/action/_yaw_s.c
+[5.132s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/robot_controller_s__rosidl_typesupport_c.so
+[5.132s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/robot_controller_s__rosidl_typesupport_fastrtps_c.so
+[5.132s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/robot_controller_s__rosidl_typesupport_introspection_c.so
+[5.132s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/robot_controller_s__rosidl_typesupport_fastrtps_c.so
+[5.133s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/robot_controller_s__rosidl_typesupport_introspection_c.so
+[5.134s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/robot_controller_s__rosidl_typesupport_c.so
+[5.134s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/ament_index/resource_index/rust_packages/robot_controller
+[5.135s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/rust/Cargo.toml
+[5.136s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/rust/build.rs
+[5.136s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/rust/src/action.rs
+[5.137s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/rust/src/action/rmw.rs
+[5.137s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/rust/src/lib.rs
+[5.138s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/action/MoveX.idl
+[5.138s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/action/Yaw.idl
+[5.139s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/action/MoveX.action
+[5.139s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/action/Yaw.action
+[5.139s] -- Symlinking: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/__init__.py
+[5.156s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/__pycache__/__init__.cpython-312.pyc
+[5.160s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/__pycache__/movement_node.cpython-312.pyc
+[5.160s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/movement_node.py
+[5.161s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller
+[5.161s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller
+[5.162s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh
+[5.162s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv
+[5.162s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/path.sh
+[5.163s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/path.dsv
+[5.163s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/local_setup.bash
+[5.164s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/local_setup.sh
+[5.164s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/local_setup.zsh
+[5.164s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/local_setup.dsv
+[5.165s] -- Symlinking: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/package.dsv
+[5.179s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/ament_index/resource_index/packages/robot_controller
+[5.179s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/rosidl_cmake-extras.cmake
+[5.180s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.181s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.181s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[5.181s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/ament_cmake_export_targets-extras.cmake
+[5.182s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.182s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.183s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[5.183s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake
+[5.184s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake
+[5.184s] -- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/package.xml
+[5.185s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_generator_c.so
+[5.185s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_typesupport_fastrtps_c.so
+[5.186s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_typesupport_introspection_c.so
+[5.186s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_typesupport_c.so
+[5.188s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_typesupport_fastrtps_cpp.so
+[5.190s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_typesupport_introspection_cpp.so
+[5.193s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_typesupport_cpp.so
+[5.265s] Listing '/home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller'...
+[5.266s] Listing '/home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/action'...
+[5.266s] Compiling '/home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/movement_node.py'...
+[5.266s] *** FileExistsError: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/__pycache__/movement_node.cpython-312.pyc is a symlink and will be changed into a regular file if import writes a byte-compiled file to it
+[5.282s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_generator_py.so
+[5.282s] -- Installing: /home/ruee/ros2_ws/install/robot_controller/lib/robot_controller/movement_node
+[5.283s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_generator_cExport.cmake
+[5.284s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_generator_cExport-noconfig.cmake
+[5.284s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_typesupport_fastrtps_cExport.cmake
+[5.285s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.285s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_introspection_cExport.cmake
+[5.286s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.286s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_cExport.cmake
+[5.287s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_cExport-noconfig.cmake
+[5.287s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_generator_cppExport.cmake
+[5.288s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.289s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.289s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_introspection_cppExport.cmake
+[5.289s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.290s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_cppExport.cmake
+[5.291s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_cppExport-noconfig.cmake
+[5.291s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_generator_pyExport.cmake
+[5.292s] -- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_generator_pyExport-noconfig.cmake
+[5.295s] Invoked command in '/home/ruee/ros2_ws/build/robot_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ruee/ros2_ws/build/robot_controller

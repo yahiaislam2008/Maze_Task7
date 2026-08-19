@@ -1,0 +1,53 @@
+[0.875s] Invoking command in '/home/ruee/ros2_ws/build/robot_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ruee/ros2_ws/install/robot_controller:/home/ruee/ros2_ws/install/maze_control:/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ruee/ros2_ws/src/robot_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ruee/ros2_ws/install/robot_controller
+[1.111s] -- The C compiler identification is GNU 13.3.0
+[1.267s] -- The CXX compiler identification is GNU 13.3.0
+[1.308s] -- Detecting C compiler ABI info
+[1.500s] -- Detecting C compiler ABI info - done
+[1.532s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.532s] -- Detecting C compile features
+[1.534s] -- Detecting C compile features - done
+[1.553s] -- Detecting CXX compiler ABI info
+[1.779s] -- Detecting CXX compiler ABI info - done
+[1.815s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.816s] -- Detecting CXX compile features
+[1.817s] -- Detecting CXX compile features - done
+[1.824s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.188s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.382s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.471s] -- Found rclpy: 7.1.11 (/opt/ros/jazzy/share/rclpy/cmake)
+[2.476s] -- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[2.499s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.648s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.790s] -- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.801s] -- Found action_msgs: 2.0.4 (/opt/ros/jazzy/share/action_msgs/cmake)
+[4.477s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[5.550s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.770s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.786s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[7.068s] -- Found PythonExtra: /usr/bin/python3  
+[7.801s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[7.957s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[7.962s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:106 (add_custom_target):
+[7.962s]   add_custom_target cannot create target
+[7.962s]   "ament_cmake_python_symlink_robot_controller" because another target with
+[7.962s]   the same name already exists.  The existing target is a custom target
+[7.963s]   created in source directory "/home/ruee/ros2_ws/src/robot_controller".  See
+[7.963s]   documentation for policy CMP0002 for more details.
+[7.964s] Call Stack (most recent call first):
+[7.964s]   /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[7.964s]   CMakeLists.txt:15 (ament_python_install_package)
+[7.965s] 
+[7.965s] [0m
+[7.965s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:144 (add_custom_target):
+[7.965s]   add_custom_target cannot create target
+[7.966s]   "ament_cmake_python_build_robot_controller_egg" because another target with
+[7.966s]   the same name already exists.  The existing target is a custom target
+[7.966s]   created in source directory "/home/ruee/ros2_ws/src/robot_controller".  See
+[7.966s]   documentation for policy CMP0002 for more details.
+[7.967s] Call Stack (most recent call first):
+[7.967s]   /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)
+[7.967s]   CMakeLists.txt:15 (ament_python_install_package)
+[7.967s] 
+[7.967s] [0m
+[7.976s] -- Configuring incomplete, errors occurred!
+[8.004s] Invoked command in '/home/ruee/ros2_ws/build/robot_controller' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ruee/ros2_ws/install/robot_controller:/home/ruee/ros2_ws/install/maze_control:/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ruee/ros2_ws/src/robot_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ruee/ros2_ws/install/robot_controller

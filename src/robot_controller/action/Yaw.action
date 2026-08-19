@@ -1,0 +1,7 @@
+float64 target_yaw_angle
+---
+bool success
+float64 final_yaw_angle
+---
+float64 current_yaw_angle
+float64 remaining_angle

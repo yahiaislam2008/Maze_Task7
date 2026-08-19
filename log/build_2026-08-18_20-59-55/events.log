@@ -1,0 +1,233 @@
+[0.000000] (-) TimerEvent: {}
+[0.000767] (-) JobUnselected: {'identifier': 'maze_control'}
+[0.000891] (robot_controller) JobQueued: {'identifier': 'robot_controller', 'dependencies': OrderedDict()}
+[0.001944] (robot_controller) JobStarted: {'identifier': 'robot_controller'}
+[0.039331] (robot_controller) JobProgress: {'identifier': 'robot_controller', 'progress': 'cmake'}
+[0.042523] (robot_controller) JobProgress: {'identifier': 'robot_controller', 'progress': 'build'}
+[0.046209] (robot_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ruee/ros2_ws/build/robot_controller', '--', '-j7', '-l7'], 'cwd': '/home/ruee/ros2_ws/build/robot_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share/turtlebot3_gazebo/models', 'USER': 'ruee', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ruee', 'OLDPWD': '/home/ruee', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2391', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ruee/training_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ruee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ruee', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ubunto:@/tmp/.ICE-unix/2204,unix/ubunto:/tmp/.ICE-unix/2204', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0a1c23f4_4186_4e77_8ad1_e0df6c394c4e', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.XVE3T3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.221', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ruee/ros2_ws/build/robot_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ruee/training_ws/install/maze_control/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy'}), 'shell': False}
+[0.099425] (-) TimerEvent: {}
+[0.163503] (robot_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.199918] (-) TimerEvent: {}
+[0.300492] (-) TimerEvent: {}
+[0.401080] (-) TimerEvent: {}
+[0.499231] (robot_controller) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.501367] (-) TimerEvent: {}
+[0.591783] (robot_controller) StdoutLine: {'line': b'-- Found rclpy: 7.1.11 (/opt/ros/jazzy/share/rclpy/cmake)\n'}
+[0.593805] (robot_controller) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.601973] (-) TimerEvent: {}
+[0.618410] (robot_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.702439] (-) TimerEvent: {}
+[0.803341] (-) TimerEvent: {}
+[0.818005] (robot_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.906337] (-) TimerEvent: {}
+[0.962296] (robot_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.981312] (robot_controller) StdoutLine: {'line': b'-- Found action_msgs: 2.0.4 (/opt/ros/jazzy/share/action_msgs/cmake)\n'}
+[1.006647] (-) TimerEvent: {}
+[1.107529] (-) TimerEvent: {}
+[1.208110] (-) TimerEvent: {}
+[1.308514] (-) TimerEvent: {}
+[1.409306] (-) TimerEvent: {}
+[1.510655] (-) TimerEvent: {}
+[1.613932] (-) TimerEvent: {}
+[1.714668] (-) TimerEvent: {}
+[1.815284] (-) TimerEvent: {}
+[1.915956] (-) TimerEvent: {}
+[2.016507] (-) TimerEvent: {}
+[2.029676] (robot_controller) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.116902] (-) TimerEvent: {}
+[2.217323] (-) TimerEvent: {}
+[2.317971] (-) TimerEvent: {}
+[2.319484] (robot_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.418203] (-) TimerEvent: {}
+[2.518933] (-) TimerEvent: {}
+[2.619456] (-) TimerEvent: {}
+[2.645599] (robot_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.651129] (robot_controller) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[2.720222] (-) TimerEvent: {}
+[2.821202] (-) TimerEvent: {}
+[2.921600] (-) TimerEvent: {}
+[3.022060] (-) TimerEvent: {}
+[3.124645] (-) TimerEvent: {}
+[3.225272] (-) TimerEvent: {}
+[3.326122] (-) TimerEvent: {}
+[3.408355] (robot_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[3.426307] (-) TimerEvent: {}
+[3.527321] (-) TimerEvent: {}
+[3.587944] (robot_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[3.627621] (-) TimerEvent: {}
+[3.683302] (robot_controller) StdoutLine: {'line': b'-- Configuring done (3.6s)\n'}
+[3.727957] (-) TimerEvent: {}
+[3.828507] (-) TimerEvent: {}
+[3.885228] (robot_controller) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[3.929532] (robot_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/ruee/ros2_ws/build/robot_controller\n'}
+[3.929901] (-) TimerEvent: {}
+[4.032376] (-) TimerEvent: {}
+[4.037425] (robot_controller) StdoutLine: {'line': b'[  2%] Built target robot_controller__rs\n'}
+[4.040573] (robot_controller) StdoutLine: {'line': b'[  4%] Built target robot_controller__rosidl_generator_type_description\n'}
+[4.054477] (robot_controller) StdoutLine: {'line': b'[  4%] Built target ament_cmake_python_symlink_robot_controller\n'}
+[4.116353] (robot_controller) StdoutLine: {'line': b'[  6%] Built target robot_controller__cpp\n'}
+[4.124907] (robot_controller) StdoutLine: {'line': b'[ 24%] Built target robot_controller__rosidl_generator_c\n'}
+[4.132881] (-) TimerEvent: {}
+[4.193813] (robot_controller) StdoutLine: {'line': b'[ 33%] Built target robot_controller__rosidl_typesupport_c\n'}
+[4.212653] (robot_controller) StdoutLine: {'line': b'[ 42%] Built target robot_controller__rosidl_typesupport_introspection_c\n'}
+[4.226888] (robot_controller) StdoutLine: {'line': b'[ 51%] Built target robot_controller__rosidl_typesupport_introspection_cpp\n'}
+[4.233170] (-) TimerEvent: {}
+[4.237503] (robot_controller) StdoutLine: {'line': b'[ 60%] Built target robot_controller__rosidl_typesupport_fastrtps_c\n'}
+[4.241773] (robot_controller) StdoutLine: {'line': b'[ 68%] Built target robot_controller__rosidl_typesupport_fastrtps_cpp\n'}
+[4.256839] (robot_controller) StdoutLine: {'line': b'[ 77%] Built target robot_controller__rosidl_typesupport_cpp\n'}
+[4.307718] (robot_controller) StdoutLine: {'line': b'[ 77%] Built target robot_controller\n'}
+[4.333316] (-) TimerEvent: {}
+[4.358218] (robot_controller) StdoutLine: {'line': b'[ 80%] Built target robot_controller__py\n'}
+[4.433844] (-) TimerEvent: {}
+[4.438263] (robot_controller) StdoutLine: {'line': b'[ 86%] Built target robot_controller__rosidl_generator_py\n'}
+[4.490269] (robot_controller) StdoutLine: {'line': b'[ 91%] Built target robot_controller_s__rosidl_typesupport_c\n'}
+[4.491337] (robot_controller) StdoutLine: {'line': b'[ 95%] Built target robot_controller_s__rosidl_typesupport_introspection_c\n'}
+[4.508028] (robot_controller) StdoutLine: {'line': b'[100%] Built target robot_controller_s__rosidl_typesupport_fastrtps_c\n'}
+[4.533999] (-) TimerEvent: {}
+[4.634616] (-) TimerEvent: {}
+[4.724757] (robot_controller) StdoutLine: {'line': b'running egg_info\n'}
+[4.735231] (-) TimerEvent: {}
+[4.794548] (robot_controller) StdoutLine: {'line': b'writing robot_controller.egg-info/PKG-INFO\n'}
+[4.795234] (robot_controller) StdoutLine: {'line': b'writing dependency_links to robot_controller.egg-info/dependency_links.txt\n'}
+[4.795847] (robot_controller) StdoutLine: {'line': b'writing top-level names to robot_controller.egg-info/top_level.txt\n'}
+[4.835918] (-) TimerEvent: {}
+[4.936723] (-) TimerEvent: {}
+[4.963660] (robot_controller) StdoutLine: {'line': b"reading manifest file 'robot_controller.egg-info/SOURCES.txt'\n"}
+[4.965639] (robot_controller) StdoutLine: {'line': b"writing manifest file 'robot_controller.egg-info/SOURCES.txt'\n"}
+[5.036970] (-) TimerEvent: {}
+[5.048036] (robot_controller) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_robot_controller_egg\n'}
+[5.068229] (robot_controller) CommandEnded: {'returncode': 0}
+[5.069343] (robot_controller) JobProgress: {'identifier': 'robot_controller', 'progress': 'install'}
+[5.084535] (robot_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ruee/ros2_ws/build/robot_controller'], 'cwd': '/home/ruee/ros2_ws/build/robot_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share/turtlebot3_gazebo/models', 'USER': 'ruee', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ruee', 'OLDPWD': '/home/ruee', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2391', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ruee/training_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ruee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ruee', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ubunto:@/tmp/.ICE-unix/2204,unix/ubunto:/tmp/.ICE-unix/2204', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0a1c23f4_4186_4e77_8ad1_e0df6c394c4e', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.XVE3T3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.221', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ruee/ros2_ws/build/robot_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ruee/training_ws/install/maze_control/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy'}), 'shell': False}
+[5.097055] (robot_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.098500] (robot_controller) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.099036] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/ament_index/resource_index/rosidl_interfaces/robot_controller\n'}
+[5.099481] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/action/MoveX.json\n'}
+[5.099869] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/action/Yaw.json\n'}
+[5.101110] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__functions.h\n'}
+[5.101637] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__struct.h\n'}
+[5.102118] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__type_support.h\n'}
+[5.102417] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__functions.h\n'}
+[5.103111] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__struct.h\n'}
+[5.103397] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__type_support.h\n'}
+[5.104209] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/move_x.h\n'}
+[5.104437] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/yaw.h\n'}
+[5.104776] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.105198] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/library_path.sh\n'}
+[5.105540] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/library_path.dsv\n'}
+[5.106134] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__rosidl_typesupport_fastrtps_c.h\n'}
+[5.106444] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__rosidl_typesupport_fastrtps_c.h\n'}
+[5.106670] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.107108] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__rosidl_typesupport_introspection_c.h\n'}
+[5.107408] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__rosidl_typesupport_introspection_c.h\n'}
+[5.107604] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.108117] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__builder.hpp\n'}
+[5.108444] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__struct.hpp\n'}
+[5.108669] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__traits.hpp\n'}
+[5.108978] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__type_support.hpp\n'}
+[5.109417] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__builder.hpp\n'}
+[5.109764] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__struct.hpp\n'}
+[5.110221] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__traits.hpp\n'}
+[5.110707] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__type_support.hpp\n'}
+[5.111152] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/move_x.hpp\n'}
+[5.111401] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/yaw.hpp\n'}
+[5.111812] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.112238] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.112560] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.113057] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.113463] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/move_x__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.114089] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/include/robot_controller/robot_controller/action/detail/yaw__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.114399] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/pythonpath.sh\n'}
+[5.114787] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/pythonpath.dsv\n'}
+[5.115491] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[5.115976] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[5.116309] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[5.116495] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[5.117178] (robot_controller) StdoutLine: {'line': b'-- Symlinking: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/__init__.py\n'}
+[5.130814] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/_robot_controller_s.ep.rosidl_typesupport_c.c\n'}
+[5.131343] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/_robot_controller_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.131756] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/_robot_controller_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.131948] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/action/__init__.py\n'}
+[5.132371] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/action/_move_x.py\n'}
+[5.132695] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/action/_move_x_s.c\n'}
+[5.133032] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/action/_yaw.py\n'}
+[5.133491] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/action/_yaw_s.c\n'}
+[5.133660] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/robot_controller_s__rosidl_typesupport_c.so\n'}
+[5.133845] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/robot_controller_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.133970] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/robot_controller_s__rosidl_typesupport_introspection_c.so\n'}
+[5.134398] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/robot_controller_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.134695] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/robot_controller_s__rosidl_typesupport_introspection_c.so\n'}
+[5.135459] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/robot_controller_s__rosidl_typesupport_c.so\n'}
+[5.136141] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/ament_index/resource_index/rust_packages/robot_controller\n'}
+[5.136938] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/rust/Cargo.toml\n'}
+[5.137340] (-) TimerEvent: {}
+[5.137531] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/rust/build.rs\n'}
+[5.138155] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/rust/src/action.rs\n'}
+[5.138638] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/rust/src/action/rmw.rs\n'}
+[5.139103] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/rust/src/lib.rs\n'}
+[5.139647] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/action/MoveX.idl\n'}
+[5.140218] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/action/Yaw.idl\n'}
+[5.140436] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/action/MoveX.action\n'}
+[5.140836] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/action/Yaw.action\n'}
+[5.141326] (robot_controller) StdoutLine: {'line': b'-- Symlinking: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/__init__.py\n'}
+[5.158170] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/__pycache__/__init__.cpython-312.pyc\n'}
+[5.161521] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/__pycache__/movement_node.cpython-312.pyc\n'}
+[5.162282] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/movement_node.py\n'}
+[5.163003] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/ament_index/resource_index/package_run_dependencies/robot_controller\n'}
+[5.163419] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/ament_index/resource_index/parent_prefix_path/robot_controller\n'}
+[5.163685] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.sh\n'}
+[5.164057] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/ament_prefix_path.dsv\n'}
+[5.164450] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/path.sh\n'}
+[5.164719] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/environment/path.dsv\n'}
+[5.165254] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/local_setup.bash\n'}
+[5.165615] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/local_setup.sh\n'}
+[5.166068] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/local_setup.zsh\n'}
+[5.166382] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/local_setup.dsv\n'}
+[5.167122] (robot_controller) StdoutLine: {'line': b'-- Symlinking: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/package.dsv\n'}
+[5.180495] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/ament_index/resource_index/packages/robot_controller\n'}
+[5.181201] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/rosidl_cmake-extras.cmake\n'}
+[5.181617] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.182411] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.182914] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.183320] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.183565] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.184359] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.184806] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[5.185310] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig.cmake\n'}
+[5.185659] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controllerConfig-version.cmake\n'}
+[5.186160] (robot_controller) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/package.xml\n'}
+[5.186599] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_generator_c.so\n'}
+[5.187038] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_typesupport_fastrtps_c.so\n'}
+[5.187604] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_typesupport_introspection_c.so\n'}
+[5.188131] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_typesupport_c.so\n'}
+[5.189791] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.192070] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_typesupport_introspection_cpp.so\n'}
+[5.194621] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_typesupport_cpp.so\n'}
+[5.237581] (-) TimerEvent: {}
+[5.267341] (robot_controller) StdoutLine: {'line': b"Listing '/home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller'...\n"}
+[5.267698] (robot_controller) StdoutLine: {'line': b"Listing '/home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/action'...\n"}
+[5.268051] (robot_controller) StdoutLine: {'line': b"Compiling '/home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/movement_node.py'...\n"}
+[5.268259] (robot_controller) StdoutLine: {'line': b'*** FileExistsError: /home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages/robot_controller/__pycache__/movement_node.cpython-312.pyc is a symlink and will be changed into a regular file if import writes a byte-compiled file to it\n'}
+[5.283584] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/lib/librobot_controller__rosidl_generator_py.so\n'}
+[5.284229] (robot_controller) StdoutLine: {'line': b'-- Installing: /home/ruee/ros2_ws/install/robot_controller/lib/robot_controller/movement_node\n'}
+[5.285185] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_generator_cExport.cmake\n'}
+[5.285589] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.286297] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.286642] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.287295] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.287592] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.288219] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_cExport.cmake\n'}
+[5.288627] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.289254] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_generator_cppExport.cmake\n'}
+[5.290134] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.290633] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.291032] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.291350] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.292197] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_cppExport.cmake\n'}
+[5.292532] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/robot_controller__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.293139] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_generator_pyExport.cmake\n'}
+[5.293484] (robot_controller) StdoutLine: {'line': b'-- Up-to-date: /home/ruee/ros2_ws/install/robot_controller/share/robot_controller/cmake/export_robot_controller__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.296702] (robot_controller) CommandEnded: {'returncode': 0}
+[5.337692] (-) TimerEvent: {}
+[5.357596] (robot_controller) JobEnded: {'identifier': 'robot_controller', 'rc': 0}
+[5.358392] (-) EventReactorShutdown: {}

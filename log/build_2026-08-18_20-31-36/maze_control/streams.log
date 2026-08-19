@@ -1,0 +1,39 @@
+[3.583s] Invoking command in '/home/ruee/ros2_ws/build/maze_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ruee/ros2_ws/build/maze_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ruee/ros2_ws/install/maze_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ruee/ros2_ws/build/maze_control/build --no-deps symlink_data --force
+[3.908s] /usr/lib/python3/dist-packages/setuptools/dist.py:744: SetuptoolsDeprecationWarning: Invalid dash-separated options
+[3.908s] !!
+[3.908s] 
+[3.908s]         ********************************************************************************
+[3.909s]         Usage of dash-separated 'script-dir' will not be supported in future
+[3.909s]         versions. Please use the underscore name 'script_dir' instead.
+[3.909s] 
+[3.909s]         This deprecation is overdue, please update your project and remove deprecated
+[3.909s]         calls to avoid build errors in the future.
+[3.909s] 
+[3.909s]         See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.
+[3.910s]         ********************************************************************************
+[3.910s] 
+[3.910s] !!
+[3.910s]   opt = self.warn_dash_deprecation(opt, section)
+[4.430s] running develop
+[4.990s] running egg_info
+[5.045s] writing maze_control.egg-info/PKG-INFO
+[5.046s] writing dependency_links to maze_control.egg-info/dependency_links.txt
+[5.046s] writing entry points to maze_control.egg-info/entry_points.txt
+[5.047s] writing requirements to maze_control.egg-info/requires.txt
+[5.047s] writing top-level names to maze_control.egg-info/top_level.txt
+[5.165s] reading manifest file 'maze_control.egg-info/SOURCES.txt'
+[5.167s] writing manifest file 'maze_control.egg-info/SOURCES.txt'
+[5.224s] running build_ext
+[5.225s] Creating /home/ruee/ros2_ws/install/maze_control/lib/python3.12/site-packages/maze-control.egg-link (link to .)
+[5.226s] Installing maze_timer_node script to /home/ruee/ros2_ws/install/maze_control/lib/maze_control
+[5.227s] Installing wall_retraction_service script to /home/ruee/ros2_ws/install/maze_control/lib/maze_control
+[5.227s] 
+[5.227s] Installed /home/ruee/ros2_ws/build/maze_control
+[5.228s] running symlink_data
+[5.228s] symbolically linking /home/ruee/ros2_ws/build/maze_control/resource/maze_control -> /home/ruee/ros2_ws/install/maze_control/share/ament_index/resource_index/packages
+[5.228s] symbolically linking /home/ruee/ros2_ws/build/maze_control/package.xml -> /home/ruee/ros2_ws/install/maze_control/share/maze_control
+[5.228s] symbolically linking /home/ruee/ros2_ws/build/maze_control/launch/maze_simulation_tb3.launch.py -> /home/ruee/ros2_ws/install/maze_control/share/maze_control/launch
+[5.229s] symbolically linking /home/ruee/ros2_ws/build/maze_control/worlds/maze_world.sdf -> /home/ruee/ros2_ws/install/maze_control/share/maze_control/worlds
+[5.229s] symbolically linking /home/ruee/ros2_ws/build/maze_control/config/bridge_config.yaml -> /home/ruee/ros2_ws/install/maze_control/share/maze_control/config
+[5.229s] symbolically linking /home/ruee/ros2_ws/build/maze_control/config/gui.config -> /home/ruee/ros2_ws/install/maze_control/share/maze_control/config
+[5.362s] Invoked command in '/home/ruee/ros2_ws/build/maze_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/ruee/ros2_ws/build/maze_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ruee/ros2_ws/install/maze_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ruee/ros2_ws/build/maze_control/build --no-deps symlink_data --force

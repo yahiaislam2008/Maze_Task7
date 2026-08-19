@@ -1,0 +1,180 @@
+[0.000000] (-) TimerEvent: {}
+[0.000297] (maze_control) JobQueued: {'identifier': 'maze_control', 'dependencies': OrderedDict()}
+[0.000434] (robot_controller) JobQueued: {'identifier': 'robot_controller', 'dependencies': OrderedDict()}
+[0.003762] (maze_control) JobStarted: {'identifier': 'maze_control'}
+[0.047291] (robot_controller) JobStarted: {'identifier': 'robot_controller'}
+[0.098952] (-) TimerEvent: {}
+[0.199559] (-) TimerEvent: {}
+[0.300074] (-) TimerEvent: {}
+[0.403189] (-) TimerEvent: {}
+[0.506206] (-) TimerEvent: {}
+[0.606616] (-) TimerEvent: {}
+[0.710765] (-) TimerEvent: {}
+[0.819198] (-) TimerEvent: {}
+[0.916571] (robot_controller) JobProgress: {'identifier': 'robot_controller', 'progress': 'cmake'}
+[0.919122] (robot_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/ruee/ros2_ws/src/robot_controller', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ruee/ros2_ws/install/robot_controller'], 'cwd': '/home/ruee/ros2_ws/build/robot_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share/turtlebot3_gazebo/models', 'USER': 'ruee', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ruee', 'OLDPWD': '/home/ruee/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2391', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ruee/ros2_ws/install:/home/ruee/training_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ruee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ruee', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ubunto:@/tmp/.ICE-unix/2204,unix/ubunto:/tmp/.ICE-unix/2204', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c4e7bbb2_415b_4cc4_9b7e_69b6e6ba7634', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.XVE3T3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.181', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ruee/ros2_ws/install/robot_controller:/home/ruee/ros2_ws/install/maze_control:/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ruee/ros2_ws/build/robot_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages:/home/ruee/ros2_ws/install/maze_control/lib/python3.12/site-packages:/home/ruee/training_ws/install/maze_control/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/ruee/ros2_ws/install/robot_controller:/home/ruee/ros2_ws/install/maze_control:/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy'}), 'shell': False}
+[0.922632] (-) TimerEvent: {}
+[1.023320] (-) TimerEvent: {}
+[1.124079] (-) TimerEvent: {}
+[1.158313] (robot_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[1.224210] (-) TimerEvent: {}
+[1.313890] (robot_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[1.324552] (-) TimerEvent: {}
+[1.355152] (robot_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.425055] (-) TimerEvent: {}
+[1.525483] (-) TimerEvent: {}
+[1.547330] (robot_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.578823] (robot_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.579591] (robot_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.580967] (robot_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.599850] (robot_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.625655] (-) TimerEvent: {}
+[1.726247] (-) TimerEvent: {}
+[1.826409] (robot_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.826699] (-) TimerEvent: {}
+[1.862184] (robot_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.862779] (robot_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.864020] (robot_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.871635] (robot_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.927115] (-) TimerEvent: {}
+[2.027582] (-) TimerEvent: {}
+[2.128261] (-) TimerEvent: {}
+[2.232154] (-) TimerEvent: {}
+[2.235538] (robot_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.332444] (-) TimerEvent: {}
+[2.429166] (robot_controller) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.432568] (-) TimerEvent: {}
+[2.517791] (robot_controller) StdoutLine: {'line': b'-- Found rclpy: 7.1.11 (/opt/ros/jazzy/share/rclpy/cmake)\n'}
+[2.523605] (robot_controller) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.1 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[2.532979] (-) TimerEvent: {}
+[2.545686] (robot_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.633342] (-) TimerEvent: {}
+[2.695357] (robot_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.734059] (-) TimerEvent: {}
+[2.834515] (-) TimerEvent: {}
+[2.837335] (robot_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.9 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[2.848227] (robot_controller) StdoutLine: {'line': b'-- Found action_msgs: 2.0.4 (/opt/ros/jazzy/share/action_msgs/cmake)\n'}
+[2.938870] (-) TimerEvent: {}
+[3.039406] (-) TimerEvent: {}
+[3.140099] (-) TimerEvent: {}
+[3.240762] (-) TimerEvent: {}
+[3.341710] (-) TimerEvent: {}
+[3.443982] (-) TimerEvent: {}
+[3.547978] (-) TimerEvent: {}
+[3.584657] (maze_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ruee/ros2_ws/build/maze_control/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/home/ruee/ros2_ws/build/maze_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share/turtlebot3_gazebo/models', 'USER': 'ruee', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ruee', 'OLDPWD': '/home/ruee/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2391', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ruee/ros2_ws/install:/home/ruee/training_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ruee', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ruee', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ubunto:@/tmp/.ICE-unix/2204,unix/ubunto:/tmp/.ICE-unix/2204', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c4e7bbb2_415b_4cc4_9b7e_69b6e6ba7634', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.XVE3T3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.181', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ruee/ros2_ws/install/robot_controller:/home/ruee/ros2_ws/install/maze_control:/home/ruee/training_ws/install/maze_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ruee/ros2_ws/build/maze_control', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ruee/ros2_ws/build/maze_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ruee/ros2_ws/install/maze_control/lib/python3.12/site-packages:/home/ruee/ros2_ws/install/robot_controller/lib/python3.12/site-packages:/home/ruee/ros2_ws/install/maze_control/lib/python3.12/site-packages:/home/ruee/training_ws/install/maze_control/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[3.649837] (-) TimerEvent: {}
+[3.754397] (-) TimerEvent: {}
+[3.855144] (-) TimerEvent: {}
+[3.911348] (maze_control) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/dist.py:744: SetuptoolsDeprecationWarning: Invalid dash-separated options\n'}
+[3.911865] (maze_control) StderrLine: {'line': b'!!\n'}
+[3.912069] (maze_control) StderrLine: {'line': b'\n'}
+[3.912186] (maze_control) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.912299] (maze_control) StderrLine: {'line': b"        Usage of dash-separated 'script-dir' will not be supported in future\n"}
+[3.912409] (maze_control) StderrLine: {'line': b"        versions. Please use the underscore name 'script_dir' instead.\n"}
+[3.912669] (maze_control) StderrLine: {'line': b'\n'}
+[3.912796] (maze_control) StderrLine: {'line': b'        This deprecation is overdue, please update your project and remove deprecated\n'}
+[3.912907] (maze_control) StderrLine: {'line': b'        calls to avoid build errors in the future.\n'}
+[3.913134] (maze_control) StderrLine: {'line': b'\n'}
+[3.913269] (maze_control) StderrLine: {'line': b'        See https://setuptools.pypa.io/en/latest/userguide/declarative_config.html for details.\n'}
+[3.913381] (maze_control) StderrLine: {'line': b'        ********************************************************************************\n'}
+[3.913491] (maze_control) StderrLine: {'line': b'\n'}
+[3.913727] (maze_control) StderrLine: {'line': b'!!\n'}
+[3.913923] (maze_control) StderrLine: {'line': b'  opt = self.warn_dash_deprecation(opt, section)\n'}
+[3.955505] (-) TimerEvent: {}
+[4.056842] (-) TimerEvent: {}
+[4.160363] (-) TimerEvent: {}
+[4.260961] (-) TimerEvent: {}
+[4.363409] (-) TimerEvent: {}
+[4.434017] (maze_control) StdoutLine: {'line': b'running develop\n'}
+[4.466900] (-) TimerEvent: {}
+[4.524462] (robot_controller) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[4.568095] (-) TimerEvent: {}
+[4.681660] (-) TimerEvent: {}
+[4.782047] (-) TimerEvent: {}
+[4.883323] (-) TimerEvent: {}
+[4.984031] (-) TimerEvent: {}
+[4.993539] (maze_control) StdoutLine: {'line': b'running egg_info\n'}
+[5.047854] (maze_control) StdoutLine: {'line': b'writing maze_control.egg-info/PKG-INFO\n'}
+[5.049163] (maze_control) StdoutLine: {'line': b'writing dependency_links to maze_control.egg-info/dependency_links.txt\n'}
+[5.049802] (maze_control) StdoutLine: {'line': b'writing entry points to maze_control.egg-info/entry_points.txt\n'}
+[5.050355] (maze_control) StdoutLine: {'line': b'writing requirements to maze_control.egg-info/requires.txt\n'}
+[5.050732] (maze_control) StdoutLine: {'line': b'writing top-level names to maze_control.egg-info/top_level.txt\n'}
+[5.085032] (-) TimerEvent: {}
+[5.168162] (maze_control) StdoutLine: {'line': b"reading manifest file 'maze_control.egg-info/SOURCES.txt'\n"}
+[5.170068] (maze_control) StdoutLine: {'line': b"writing manifest file 'maze_control.egg-info/SOURCES.txt'\n"}
+[5.185600] (-) TimerEvent: {}
+[5.227814] (maze_control) StdoutLine: {'line': b'running build_ext\n'}
+[5.228708] (maze_control) StdoutLine: {'line': b'Creating /home/ruee/ros2_ws/install/maze_control/lib/python3.12/site-packages/maze-control.egg-link (link to .)\n'}
+[5.229755] (maze_control) StdoutLine: {'line': b'Installing maze_timer_node script to /home/ruee/ros2_ws/install/maze_control/lib/maze_control\n'}
+[5.230275] (maze_control) StdoutLine: {'line': b'Installing wall_retraction_service script to /home/ruee/ros2_ws/install/maze_control/lib/maze_control\n'}
+[5.230649] (maze_control) StdoutLine: {'line': b'\n'}
+[5.231030] (maze_control) StdoutLine: {'line': b'Installed /home/ruee/ros2_ws/build/maze_control\n'}
+[5.231412] (maze_control) StdoutLine: {'line': b'running symlink_data\n'}
+[5.231600] (maze_control) StdoutLine: {'line': b'symbolically linking /home/ruee/ros2_ws/build/maze_control/resource/maze_control -> /home/ruee/ros2_ws/install/maze_control/share/ament_index/resource_index/packages\n'}
+[5.231914] (maze_control) StdoutLine: {'line': b'symbolically linking /home/ruee/ros2_ws/build/maze_control/package.xml -> /home/ruee/ros2_ws/install/maze_control/share/maze_control\n'}
+[5.232078] (maze_control) StdoutLine: {'line': b'symbolically linking /home/ruee/ros2_ws/build/maze_control/launch/maze_simulation_tb3.launch.py -> /home/ruee/ros2_ws/install/maze_control/share/maze_control/launch\n'}
+[5.232236] (maze_control) StdoutLine: {'line': b'symbolically linking /home/ruee/ros2_ws/build/maze_control/worlds/maze_world.sdf -> /home/ruee/ros2_ws/install/maze_control/share/maze_control/worlds\n'}
+[5.232788] (maze_control) StdoutLine: {'line': b'symbolically linking /home/ruee/ros2_ws/build/maze_control/config/bridge_config.yaml -> /home/ruee/ros2_ws/install/maze_control/share/maze_control/config\n'}
+[5.233040] (maze_control) StdoutLine: {'line': b'symbolically linking /home/ruee/ros2_ws/build/maze_control/config/gui.config -> /home/ruee/ros2_ws/install/maze_control/share/maze_control/config\n'}
+[5.285963] (-) TimerEvent: {}
+[5.365278] (maze_control) CommandEnded: {'returncode': 0}
+[5.386345] (-) TimerEvent: {}
+[5.395403] (maze_control) JobEnded: {'identifier': 'maze_control', 'rc': 0}
+[5.487674] (-) TimerEvent: {}
+[5.589246] (-) TimerEvent: {}
+[5.596433] (robot_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.689832] (-) TimerEvent: {}
+[5.790423] (-) TimerEvent: {}
+[5.897129] (-) TimerEvent: {}
+[5.998150] (-) TimerEvent: {}
+[6.102371] (-) TimerEvent: {}
+[6.202919] (-) TimerEvent: {}
+[6.303781] (-) TimerEvent: {}
+[6.404118] (-) TimerEvent: {}
+[6.504599] (-) TimerEvent: {}
+[6.605154] (-) TimerEvent: {}
+[6.710188] (-) TimerEvent: {}
+[6.816585] (robot_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.817092] (-) TimerEvent: {}
+[6.832937] (robot_controller) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[6.924977] (-) TimerEvent: {}
+[7.025681] (-) TimerEvent: {}
+[7.115560] (robot_controller) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[7.130889] (-) TimerEvent: {}
+[7.232494] (-) TimerEvent: {}
+[7.336257] (-) TimerEvent: {}
+[7.437206] (-) TimerEvent: {}
+[7.537715] (-) TimerEvent: {}
+[7.638257] (-) TimerEvent: {}
+[7.762137] (-) TimerEvent: {}
+[7.848116] (robot_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[7.862302] (-) TimerEvent: {}
+[7.963700] (-) TimerEvent: {}
+[8.004219] (robot_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[8.008454] (robot_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:106 (add_custom_target):\n'}
+[8.009032] (robot_controller) StderrLine: {'line': b'  add_custom_target cannot create target\n'}
+[8.009370] (robot_controller) StderrLine: {'line': b'  "ament_cmake_python_symlink_robot_controller" because another target with\n'}
+[8.009547] (robot_controller) StderrLine: {'line': b'  the same name already exists.  The existing target is a custom target\n'}
+[8.009789] (robot_controller) StderrLine: {'line': b'  created in source directory "/home/ruee/ros2_ws/src/robot_controller".  See\n'}
+[8.010423] (robot_controller) StderrLine: {'line': b'  documentation for policy CMP0002 for more details.\n'}
+[8.010624] (robot_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[8.010986] (robot_controller) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)\n'}
+[8.011471] (robot_controller) StderrLine: {'line': b'  CMakeLists.txt:15 (ament_python_install_package)\n'}
+[8.011671] (robot_controller) StderrLine: {'line': b'\n'}
+[8.012113] (robot_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[8.012414] (robot_controller) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:144 (add_custom_target):\n'}
+[8.012588] (robot_controller) StderrLine: {'line': b'  add_custom_target cannot create target\n'}
+[8.012794] (robot_controller) StderrLine: {'line': b'  "ament_cmake_python_build_robot_controller_egg" because another target with\n'}
+[8.013061] (robot_controller) StderrLine: {'line': b'  the same name already exists.  The existing target is a custom target\n'}
+[8.013305] (robot_controller) StderrLine: {'line': b'  created in source directory "/home/ruee/ros2_ws/src/robot_controller".  See\n'}
+[8.013518] (robot_controller) StderrLine: {'line': b'  documentation for policy CMP0002 for more details.\n'}
+[8.013676] (robot_controller) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[8.013905] (robot_controller) StderrLine: {'line': b'  /opt/ros/jazzy/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)\n'}
+[8.014082] (robot_controller) StderrLine: {'line': b'  CMakeLists.txt:15 (ament_python_install_package)\n'}
+[8.014384] (robot_controller) StderrLine: {'line': b'\n'}
+[8.014601] (robot_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[8.023504] (robot_controller) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[8.051485] (robot_controller) CommandEnded: {'returncode': 1}
+[8.064287] (-) TimerEvent: {}
+[8.095346] (robot_controller) JobEnded: {'identifier': 'robot_controller', 'rc': 1}
+[8.106987] (-) EventReactorShutdown: {}
