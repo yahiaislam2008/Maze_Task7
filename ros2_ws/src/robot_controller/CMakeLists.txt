@@ -28,4 +28,10 @@ install(
   RENAME wall_client
 )
 
+install(
+  PROGRAMS robot_controller/maze_solve.py
+  DESTINATION lib/${PROJECT_NAME}
+  RENAME maze_solve
+)
+
 ament_package()
