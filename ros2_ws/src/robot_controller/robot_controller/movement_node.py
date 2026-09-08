@@ -10,6 +10,7 @@ from rclpy.node import Node
 from rclpy.parameter import Parameter
 from rcl_interfaces.msg import SetParametersResult
 from robot_controller.action import MoveX, Yaw
+from robot_controller.PID_controller import PID
 
 class MovementNode(Node):
 
@@ -19,7 +20,6 @@ class MovementNode(Node):
         # 1. Declare Parameters
         self.declare_parameter('cmd_vel_topic', '/cmd_vel')
         self.declare_parameter('odom_topic', '/odom')
-        self.declare_parameter('linear_speed', 1.0)
         self.declare_parameter('angular_speed', 0.5)
         self.declare_parameter('yaw_tolerance', 0.05)
         self.declare_parameter('distance_tolerance', 0.02)
@@ -29,6 +29,17 @@ class MovementNode(Node):
         self.declare_parameter('yaw_target_deg', 0.0)
         self.declare_parameter('is_moving', False)
         self.declare_parameter('is_rotating', False)
+
+         #PID parameters for linear 
+        self.declare_parameter('linear_kp', 1.0)
+        self.declare_parameter('linear_ki', 0.0)
+        self.declare_parameter('linear_kd', 0.0)
+
+        self.declare_parameter('linear_output_min', 0.0)
+        self.declare_parameter('linear_output_max', 1.0)
+
+        self.declare_parameter('linear_integral_min', -0.5)
+        self.declare_parameter('linear_integral_max', 0.5)
 
         # Retrieve Topic Config
         self.cmd_vel_topic = self.get_parameter('cmd_vel_topic').value
@@ -50,12 +61,30 @@ class MovementNode(Node):
         self.target_distance = 0.0
         self.moving = False
 
+        self.linear_pid = PID(
+
+          kp=self.get_parameter('linear_kp').value,
+          ki=self.get_parameter('linear_ki').value,
+          kd=self.get_parameter('linear_kd').value,
+
+          output_limits=(
+             self.get_parameter('linear_output_min').value,
+             self.get_parameter('linear_output_max').value ),
+
+          integral_limits=(
+             self.get_parameter('linear_integral_min').value,
+             self.get_parameter('linear_integral_max').value  ),
+
+          deadzone=self.get_parameter('distance_tolerance').value
+)
+
         self.target_yaw = 0.0
         self.rotating = False
 
         # Odometry Tracking Variables
         self.last_odom_time = self.get_clock().now()
         self.has_odom = False
+        self.last_linear_control_time = self.get_clock().now()
 
         # Control Loops
         control_period = self.get_parameter('control_loop_period').value
@@ -110,12 +139,27 @@ class MovementNode(Node):
                 self.start_move(param.value)
             elif param.name == 'yaw_target_deg':
                 self.start_rotate(math.radians(param.value))
+            elif param.name in ('linear_kp', 'linear_ki', 'linear_kd'):
+             kp = self.get_parameter('linear_kp').value
+             ki = self.get_parameter('linear_ki').value
+             kd = self.get_parameter('linear_kd').value
+
+             if param.name == 'linear_kp':
+                kp = param.value
+             elif param.name == 'linear_ki':
+                 ki = param.value
+             elif param.name == 'linear_kd':
+                  kd = param.value
+
+             self.linear_pid.set_gains(kp, ki, kd)
         return SetParametersResult(successful=True)
 
     def start_move(self, distance):
         self.target_distance = distance
         self.start_x = self.current_x
         self.start_y = self.current_y
+        self.linear_pid.reset()
+        self.last_linear_control_time = self.get_clock().now()
         self.moving = True
         self.set_parameters([Parameter('is_moving', Parameter.Type.BOOL, True)])
         self.get_logger().info(f'Move triggered: distance={distance}')
@@ -154,21 +198,28 @@ class MovementNode(Node):
             return
 
         distance = self.get_distance_moved()
-        speed = self.get_parameter('linear_speed').value
         tolerance = self.get_parameter('distance_tolerance').value
 
-        if (self.target_distance - distance) > tolerance:
-            twist.linear.x = speed
-        else:
+        error = self.target_distance - distance
+        
+        if abs(error)<= tolerance:
             twist.linear.x = 0.0
             self.publisher.publish(twist)
             self.moving = False
             self.set_parameters([Parameter('is_moving', Parameter.Type.BOOL, False)])
             self.get_logger().info('Movement Done!')
             return
+        
+        now = self.get_clock().now()
+        dt = (now - self.last_linear_control_time).nanoseconds / 1e9
+        self.last_linear_control_time = now
 
+        linear_output = self.linear_pid.compute(
+                measurement=distance,dt=dt, error=error)
+        
+        twist.linear.x = linear_output
         self.publisher.publish(twist)
-
+       
     def rotate_robot(self):
         if not self.rotating:
             return
